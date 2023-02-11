@@ -1,0 +1,11 @@
+#but{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#ffffff, #000000);
+    -fx-effect: dropshadow( three-pass-box , rgb(255, 255, 255) , 5, 0.0 , 0 , 1 );
+}
+
+#but:hover {
+    -fx-background-color: linear-gradient(#000000, #ffffff);
+}

@@ -1,0 +1,11 @@
+Hidrogenio 1 0 0 0 0 0 0
+Helio 2 0 0 0 0 0 0
+Litio 2 1 0 0 0 0 0
+Carbono 2 4 0 0 0 0 0
+Oxigenio 2 6 0 0 0 0 0
+Sodio 2 8 1 0 0 0 0
+Fosforo 2 8 5 0 0 0 0
+Argonio 2 8 8 0 0 0 0
+Estanho 2 8 18 18 4 0 0
+Uranio 2 8 18 32 21 9 2
+

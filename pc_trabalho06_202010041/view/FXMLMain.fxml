@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <AnchorPane fx:id="anchorPane_Background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="721.0">
+         <children>
+            <ImageView fitHeight="812.0" fitWidth="721.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/background/BarbeiroDorminhoco.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="720.0" prefWidth="721.0">
+               <children>
+                  <ImageView fitHeight="768.0" fitWidth="721.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/background/BarbeiroDorminhoco2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="135.0" fitWidth="84.0" layoutX="4.0" layoutY="584.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/barbeiro/icone.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="153.0" layoutY="640.0" text="Segundos">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textfield_TempoCortando" alignment="CENTER" layoutX="109.0" layoutY="639.0" prefHeight="25.0" prefWidth="38.0" text="10" />
+                  <Button fx:id="button_CortandoAction" layoutX="135.0" layoutY="670.0" minWidth="52.0" mnemonicParsing="false" onAction="#cortandoTime" text="Ok" />
+                  <Label layoutX="99.0" layoutY="610.0" text="Tempo Cortando">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="378.0" layoutY="640.0" text="Segundos">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textfield_TempoChegando" alignment="CENTER" layoutX="334.0" layoutY="640.0" prefHeight="25.0" prefWidth="38.0" text="10" />
+                  <Button fx:id="button_ChegandoAction" layoutX="360.0" layoutY="670.0" minWidth="52.0" mnemonicParsing="false" onAction="#chegandoTime" text="Ok" />
+                  <Label layoutX="293.0" layoutY="610.0" text="Chegada de Novo Cliente">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="180.0" fitWidth="188.0" layoutX="518.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/background/fila%20de%20epera.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="label_Fila4" alignment="CENTER" layoutX="546.0" layoutY="611.0" prefHeight="23.0" prefWidth="122.0">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label_Fila3" alignment="CENTER" layoutX="546.0" layoutY="639.0" prefHeight="23.0" prefWidth="122.0">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label_Fila2" alignment="CENTER" layoutX="546.0" layoutY="665.0" prefHeight="23.0" prefWidth="122.0">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label_Fila1" alignment="CENTER" layoutX="546.0" layoutY="692.0" prefHeight="23.0" prefWidth="122.0">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

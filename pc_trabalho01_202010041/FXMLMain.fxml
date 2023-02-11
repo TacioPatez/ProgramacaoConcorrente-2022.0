@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="fatherAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <AnchorPane fx:id="mainAnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: purple;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.75" pickOnBounds="true">
+               <image>
+                  <Image url="@/util/background1.jpg" />
+               </image>
+            </ImageView>
+            <Button id="but" fx:id="playGameButton" layoutX="264.0" layoutY="208.0" minWidth="75.0" mnemonicParsing="false" stylesheets="@/util/style.css" text="Play" />
+            <Button id="but" fx:id="rulesGameButton" layoutX="264.0" layoutY="249.0" minWidth="75.0" mnemonicParsing="false" stylesheets="@/util/style.css" text="Rules" />
+            <Button id="but" fx:id="quitButton" layoutX="264.0" layoutY="292.0" minWidth="75.0" mnemonicParsing="false" stylesheets="@/util/style.css" text="Quit" />
+            <Label layoutX="105.0" layoutY="118.0" text="Periodic Fascination" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="gameAnchorPane" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+               <image>
+                  <Image url="@/util/background2.jpg" />
+               </image>
+            </ImageView>
+            <Button id="but" fx:id="doneRoundButton" layoutX="276.0" layoutY="350.0" mnemonicParsing="false" stylesheets="@/util/style.css" text="DONE" />
+            <Button id="but" fx:id="decreaseRoundButton" layoutX="251.0" layoutY="296.0" mnemonicParsing="false" stylesheets="@/util/style.css" text="&lt;" />
+            <Button id="but" fx:id="increaseRoundButton" layoutX="325.0" layoutY="296.0" mnemonicParsing="false" stylesheets="@/util/style.css" text="&gt;" />
+            <Label layoutX="260.0" layoutY="200.0" text="Camada">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="260.0" layoutY="269.0" text="Elétrons">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="eletronsNumberTextField" alignment="CENTER" editable="false" layoutX="286.0" layoutY="296.0" minHeight="10.0" minWidth="10.0" prefWidth="30.0" text="0" />
+            <Slider fx:id="eletronicLayerSlider" blockIncrement="1.0" layoutX="231.0" layoutY="231.0" majorTickUnit="1.0" max="7.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
+            <Label fx:id="atomNameLabel" alignment="CENTER" layoutX="138.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="325.0" textAlignment="CENTER" textFill="RED" underline="true">
+               <font>
+                  <Font name="Arial Black" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="camada1ImageView" fitHeight="57.0" fitWidth="87.0" layoutX="257.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/util/camadas/Camada1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="camada2ImageView" fitHeight="68.0" fitWidth="101.0" layoutX="251.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@/util/camadas/Camada2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="camada3ImageView" fitHeight="77.0" fitWidth="118.0" layoutX="243.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@/util/camadas/Camada3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="camada4ImageView" fitHeight="87.0" fitWidth="134.0" layoutX="235.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@/util/camadas/Camada4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="camada5ImageView" fitHeight="97.0" fitWidth="149.0" layoutX="226.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@/util/camadas/Camada5.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="camada6ImageView" fitHeight="111.0" fitWidth="166.0" layoutX="219.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@/util/camadas/Camada6.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="camada7ImageView" fitHeight="124.0" fitWidth="186.0" layoutX="209.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@/util/camadas/Camada7.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="rulesAnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: purple;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.75" pickOnBounds="true">
+               <image>
+                  <Image url="@/util/background1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="250.0" layoutY="51.0" text="Rules" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="145.0" prefHeight="155.0" prefWidth="575.0" text="  Ao iniciar o jogo, seu objetivo é completar o átomo indicado com os elétrons que faltam de acordo com sua camada eletrônica.                                                                                                                Este jogo não têm fins lucrativos." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button id="but" fx:id="backRulesButton" layoutX="263.0" layoutY="300.0" minWidth="75.0" mnemonicParsing="false" stylesheets="@/util/style.css" text="Back" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

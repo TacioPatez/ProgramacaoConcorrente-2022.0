@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/background.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_Pai" fitHeight="116.0" fitWidth="110.0" layoutX="353.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/pai.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_Filho1" fitHeight="116.0" fitWidth="110.0" layoutX="153.0" layoutY="158.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/Filho%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_Filho2" fitHeight="116.0" fitWidth="110.0" layoutX="353.0" layoutY="158.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/Filho%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_Filho3" fitHeight="116.0" fitWidth="110.0" layoutX="553.0" layoutY="158.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/Filho%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_Neto1" fitHeight="116.0" fitWidth="110.0" layoutX="153.0" layoutY="308.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/Neto%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_Neto2" fitHeight="116.0" fitWidth="110.0" layoutX="353.0" layoutY="308.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/Neto%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_Bisneto" fitHeight="116.0" fitWidth="110.0" layoutX="153.0" layoutY="458.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/Bisneto%201.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_Filho1" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="174.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" opacity="0.0" prefHeight="32.0" prefWidth="129.0" text="Galo Cego" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_Neto1" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="323.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" opacity="0.0" prefHeight="32.0" prefWidth="129.0" text="Big Monster" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_Bisneto" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="473.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" opacity="0.0" prefHeight="32.0" prefWidth="129.0" text="Ney" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_Pai" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="23.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="32.0" prefWidth="129.0" text="Sun King" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_Filho3" alignment="CENTER_RIGHT" layoutX="413.0" layoutY="173.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" opacity="0.0" prefHeight="32.0" prefWidth="129.0" text="j" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_Filho2" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="173.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" opacity="0.0" prefHeight="32.0" prefWidth="129.0" text="Saint" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_Neto2" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="323.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" opacity="0.0" prefHeight="32.0" prefWidth="129.0" text="Eye" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField_Pai" alignment="CENTER" editable="false" layoutX="300.0" layoutY="64.0" prefHeight="25.0" prefWidth="42.0" text="0">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textField_Filho1" alignment="CENTER" editable="false" layoutX="101.0" layoutY="213.0" opacity="0.0" prefHeight="25.0" prefWidth="42.0" text="0">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textField_Neto1" alignment="CENTER" editable="false" layoutX="101.0" layoutY="359.0" opacity="0.0" prefHeight="25.0" prefWidth="42.0" text="0">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textField_Bisneto" alignment="CENTER" editable="false" layoutX="101.0" layoutY="511.0" opacity="0.0" prefHeight="25.0" prefWidth="42.0" text="0">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textField_Filho2" alignment="CENTER" editable="false" layoutX="300.0" layoutY="213.0" opacity="0.0" prefHeight="25.0" prefWidth="42.0" text="0">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textField_Neto2" alignment="CENTER" editable="false" layoutX="300.0" layoutY="359.0" opacity="0.0" prefHeight="25.0" prefWidth="42.0" text="0">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textField_Filho3" alignment="CENTER" editable="false" layoutX="500.0" layoutY="213.0" opacity="0.0" prefHeight="25.0" prefWidth="42.0" text="0">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="imageView_Filho1Died" fitHeight="137.0" fitWidth="129.0" layoutX="144.0" layoutY="158.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/died.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_Neto1Died" fitHeight="137.0" fitWidth="129.0" layoutX="144.0" layoutY="303.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/died.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_BisnetoDied" fitHeight="137.0" fitWidth="129.0" layoutX="150.0" layoutY="453.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/died.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_Filho2Died" fitHeight="137.0" fitWidth="129.0" layoutX="344.0" layoutY="153.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/died.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_Neto2Died" fitHeight="137.0" fitWidth="129.0" layoutX="344.0" layoutY="303.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/died.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_Filho3Died" fitHeight="137.0" fitWidth="129.0" layoutX="544.0" layoutY="150.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/died.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_PaiDied" fitHeight="137.0" fitWidth="129.0" layoutX="344.0" layoutY="3.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/died.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_linhaFilho1" fitHeight="43.0" fitWidth="405.0" layoutX="206.0" layoutY="124.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/Linha%20Filhos.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_linhaFilho3" fitHeight="32.0" fitWidth="10.0" layoutX="605.0" layoutY="139.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/Linha%20Filho3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_linhaNeto1" fitHeight="72.0" fitWidth="10.0" layoutX="206.0" layoutY="269.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/Linha%20Neto%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_linhaNeto2" fitHeight="72.0" fitWidth="10.0" layoutX="405.0" layoutY="269.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/Linha%20Neto%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView_linhaBisneto" fitHeight="72.0" fitWidth="10.0" layoutX="206.0" layoutY="420.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utils/Linha%20Neto%201.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
